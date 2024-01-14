@@ -1,0 +1,43 @@
+.grid{display: grid;
+grid-template-areas: 
+"n"
+"b"
+"c"
+"f";
+grid-template-rows: 1fr 1fr 7fr 1fr;}
+
+.l1{grid-area: n;
+background-color: purple;
+padding: 10px;}
+
+.l2{grid-area: b;
+background-color: antiquewhite;
+padding: 10px;}
+
+.l3{grid-area: c;
+    padding: 10px;
+display: flex;
+flex-wrap: wrap;}
+
+.l4{grid-area: f;
+background-color: purple;
+color: white;
+padding: 10px;}
+
+.seccion{display: flex;
+justify-content: center;
+text-align: center;}
+
+.lista{display: flex;
+flex-direction: column;}
+
+.card{margin: 10px;}
+
+@media (min-width: 576px) {
+    .grid{grid-template-areas: "n b"
+        "n c"
+        "f c";
+    grid-template-columns: 16% 84%;
+grid-template-rows: 15% 70% 15%;}
+
+}
